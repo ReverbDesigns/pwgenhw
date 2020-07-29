@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive bootstrap bcs homework">
+    <meta name="author" content="Jordan Bell">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">Password Generator</h1>
+     </header>
+     <div class="container text-center shadow-sm round-sm p-3">
+      <div class="row">
+        <!-- sample modal content -->
+        <div class="bs-example bs-example-padded-bottom">
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Password Paramaters
+          </button>
+        </div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Welcome to your New Password Generator!</h4>
+      </div>
+      <div class="modal-body">
+        <h4>**Acceptance Criteria**</h4>
+        <p>This tool will generate an acceptable password for you as long as it meets certain standards.</p>
+
+        <div class="panel panel-primary"><h5>You will be selecting which criteria to include in the password.</h5></div>
+        <div class="panel panel-primary"><h5>You will be selecting the length of the password.</h5></div>
+        <div class="panel panel-primary"><h5>You may choose lowercase, uppercase, numeric, and/or special characters.</h5></div>
+        <div class="panel panel-primary"><h5>You will be selecting the length of the password.</h5></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">I Understand</button>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+          <!--This is the content area-->
+          <div id="content">
+              <h2>Generate a Password</h2>
+              <hr>
+              <!-- This is a readonly text area for output-->
+              <div id="returnP" class="p-3 offset-sm-2 col-sm-8 text-center border-2-gray">
+              
+              <textarea class="col-sm-3 text-break" readonly id="password" placeholder="Your Secure Password"
+                  aria-label="Generated Password"></textarea>
+              </div>
+              <hr>
+              <!-- This is the div for the buttons -->
+              <div id="btn">
+                  <!-- This is the generate password button -->
+                  <button class="col-md-offset-1 col-sm-3 btn-primary rounded-lg" id="generate">Generate
+                      Password</button>
+                  <!-- This is the copy button -->
+                  <button class="col-md-offset-1 col-sm-3 btn-warning rounded-lg" id="copy">Copy to Clipboard</button>
+  
+  
+              </div>
+          </div>
+      </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, per GetBootStrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/pwgen.js"></script>
+    
+    
+  </body>
+</html>
